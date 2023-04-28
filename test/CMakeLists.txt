@@ -4,11 +4,12 @@ enable_testing()
 include(FetchContent)
 FetchContent_Declare(
   googletest
-  URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+  GIT_REPOSITORY https://github.com/google/googletest.git
+  GIT_TAG        release-1.12.0
 )
 
 FetchContent_MakeAvailable(googletest)
 
 # Add the test executable
-add_executable(SimpleTest simple_test.cc ../src/simple.cc)
-target_link_libraries(SimpleTest gtest gtest_main pthread)
+add_executable(SimpleTest simple_test.cc)
+target_link_libraries(SimpleTest gtest gtest_main pthread MySimpleProjectLib)
