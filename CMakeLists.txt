@@ -5,8 +5,8 @@ project(MySimpleProject)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Add the src folder to the include directories
-include_directories(src)
+# Add the project root folder to the include directories
+include_directories(${CMAKE_SOURCE_DIR})
 
 # Set the output directory for the executables to build/bin
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)

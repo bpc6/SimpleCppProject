@@ -1,5 +1,5 @@
 #include <iostream>
-#include "simple.h"
+#include "src/simple.h"
 
 int main() {
     Simple simpleObject;

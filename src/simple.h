@@ -1,13 +1,13 @@
-#ifndef SIMPLE_H
-#define SIMPLE_H
+#ifndef SRC_SIMPLE_H_
+#define SRC_SIMPLE_H_
 
 class Simple {
-public:
+ public:
     Simple();
     int getValue() const;
 
-private:
+ private:
     int value;
 };
 
-#endif // SIMPLE_H
+#endif  // SRC_SIMPLE_H_

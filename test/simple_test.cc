@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "simple.h"
+#include "src/simple.h"
 
 TEST(SimpleTest, GetValue) {
     Simple simpleObject;

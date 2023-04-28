@@ -1,4 +1,4 @@
-#include "simple.h"
+#include "src/simple.h"
 
 Simple::Simple() : value(42) {}
 

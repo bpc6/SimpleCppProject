@@ -11,3 +11,6 @@ run:
 
 test:
 	./build/bin/SimpleTest
+
+lint:
+	cpplint --recursive src/ tests/
